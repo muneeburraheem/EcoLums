@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="12dp"
+    android:gravity="top"
+    android:background="@color/white">
+
+    <!-- Colored left stripe by action type -->
+    <View
+        android:id="@+id/view_action_stripe"
+        android:layout_width="4dp"
+        android:layout_height="match_parent"
+        android:background="@color/teal_primary"
+        android:layout_marginEnd="12dp" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_audit_action"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="METRIC_UPDATED"
+            android:textSize="13sp"
+            android:textStyle="bold"
+            android:textColor="@color/text_primary" />
+
+        <TextView
+            android:id="@+id/tv_audit_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:text="Updated BIKE_PER_KM from 0.21 to 0.25"
+            android:textSize="12sp"
+            android:textColor="@color/text_secondary" />
+
+        <TextView
+            android:id="@+id/tv_audit_admin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:text="By: admin@ecolums.edu"
+            android:textSize="11sp"
+            android:textColor="@color/text_hint" />
+
+    </LinearLayout>
+
+    <!-- Timestamp on the right -->
+    <TextView
+        android:id="@+id/tv_audit_timestamp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="12:34 PM"
+        android:textSize="11sp"
+        android:textColor="@color/text_hint"
+        android:gravity="end" />
+
+</LinearLayout>

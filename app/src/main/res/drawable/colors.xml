@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Primary teal — matches the EcoLUMS mockup -->
+    <color name="teal_primary">#00BCD4</color>
+    <color name="teal_dark">#0097A7</color>
+    <color name="teal_light">#B2EBF2</color>
+    <color name="teal_extra_light">#E0F7FA</color>
+
+    <!-- Accent green for progress bars and points -->
+    <color name="green_accent">#00E676</color>
+    <color name="green_bar">#4ADE80</color>
+
+    <!-- Dark surfaces for score cards -->
+    <color name="card_black">#000000</color>
+    <color name="card_dark">#1A1A1A</color>
+
+    <!-- Backgrounds -->
+    <color name="white">#FFFFFF</color>
+    <color name="background_light">#F5F5F5</color>
+    <color name="background_grey">#FAFAFA</color>
+
+    <!-- Text colors -->
+    <color name="text_primary">#212121</color>
+    <color name="text_secondary">#757575</color>
+    <color name="text_hint">#BDBDBD</color>
+    <color name="text_on_teal">#FFFFFF</color>
+    <color name="text_on_dark">#FFFFFF</color>
+
+    <!-- Status colors -->
+    <color name="error_red">#F44336</color>
+    <color name="warning_amber">#FFC107</color>
+    <color name="success_green">#4CAF50</color>
+
+    <!-- Bottom nav -->
+    <color name="nav_selected">#7B61FF</color>
+    <color name="nav_unselected">#9E9E9E</color>
+    <color name="nav_background">#EEF0FF</color>
+
+    <!-- Admin badge -->
+    <color name="admin_badge">#E53935</color>
+</resources>

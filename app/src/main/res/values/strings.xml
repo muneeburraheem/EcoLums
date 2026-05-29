@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">EcoLUMS</string>
+
+    <!-- Bottom navigation -->
+    <string name="nav_logs">Logs</string>
+    <string name="nav_home">Home</string>
+    <string name="nav_impact">Impact</string>
+    <string name="nav_challenges">Challenges</string>
+    <string name="nav_clubs">Clubs</string>
+
+    <!-- Login -->
+    <string name="create_account">Create an account</string>
+    <string name="sign_in_subtitle">Enter your email to sign up for this app</string>
+    <string name="hint_email">Enter Email</string>
+    <string name="hint_password">Enter Password</string>
+    <string name="btn_continue">Continue</string>
+    <string name="or">or</string>
+    <string name="already_have_account">Already have an account? Sign in</string>
+    <string name="terms_text">By clicking continue, you agree to our Terms of Service and Privacy Policy</string>
+
+    <!-- Home -->
+    <string name="eco_score">Eco Score</string>
+    <string name="points_label">Points</string>
+    <string name="leaderboard_position">Place in Leaderboard</string>
+    <string name="campus_impact">Check Campus-wide Impact</string>
+    <string name="todays_activities">Today\'s Activities</string>
+    <string name="no_activities">No activities logged today. Tap + to add one!</string>
+
+    <!-- Admin -->
+    <string name="admin_dashboard">Admin Dashboard</string>
+    <string name="tab_users">Users</string>
+    <string name="tab_privacy">Privacy</string>
+    <string name="tab_audit">Audit Log</string>
+    <string name="btn_reset_password">Reset Password</string>
+    <string name="btn_delete_data">Delete Data</string>
+    <string name="btn_export_data">Export Data</string>
+    <string name="privacy_share_default">Share data with clubs by default</string>
+    <string name="access_denied">Access denied. Admin role required.</string>
+
+    <!-- Trophy Case -->
+    <string name="trophy_case">Trophy Case</string>
+    <string name="badges_earned">Badges Earned</string>
+    <string name="badge_not_earned">Not earned yet</string>
+
+    <!-- Merch Store -->
+    <string name="merch_store">Merch Store</string>
+    <string name="redeem_points">Redeem Points</string>
+    <string name="out_of_stock">Out of Stock</string>
+
+    <!-- Team Dashboard -->
+    <string name="team_dashboard">Team Dashboard</string>
+    <string name="enroll_team">Enroll Team</string>
+    <string name="top_contributors">Top Contributors</string>
+
+    <!-- Misc -->
+    <string name="loading">Loading…</string>
+    <string name="error_generic">Something went wrong. Please try again.</string>
+    <string name="sign_out">Sign Out</string>
+</resources>

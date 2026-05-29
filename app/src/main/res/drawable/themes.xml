@@ -1,0 +1,38 @@
+<resources>
+    <!-- Main application theme — no action bar (we use custom toolbars) -->
+    <style
+        name="Theme.ecolums"
+        parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="colorPrimary">@color/teal_primary</item>
+        <item name="colorPrimaryDark">@color/teal_dark</item>
+        <item name="colorAccent">@color/green_accent</item>
+        <item name="android:windowBackground">@color/white</item>
+        <item name="android:statusBarColor">@color/teal_primary</item>
+    </style>
+
+    <!-- Teal toolbar style used in most activities -->
+    <style
+        name="TealToolbar"
+        parent="Widget.AppCompat.Toolbar">
+        <item name="android:background">@color/teal_primary</item>
+        <item name="titleTextColor">@color/white</item>
+        <item name="android:elevation">4dp</item>
+    </style>
+
+    <!-- Card style for dark score cards (Home screen) -->
+    <style
+        name="DarkScoreCard"
+        parent="Widget.MaterialComponents.CardView">
+        <item name="cardBackgroundColor">@color/card_black</item>
+        <item name="cardCornerRadius">12dp</item>
+        <item name="cardElevation">4dp</item>
+    </style>
+
+    <!-- Admin badge chip style -->
+    <style
+        name="AdminChip"
+        parent="Widget.MaterialComponents.Chip.Choice">
+        <item name="chipBackgroundColor">@color/admin_badge</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+</resources>

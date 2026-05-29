@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:gravity="center_vertical"
+    android:paddingHorizontal="16dp"
+    android:paddingVertical="12dp">
+
+    <TextView
+        android:id="@+id/tv_redeemed_emoji"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:text="🛍️" />
+
+    <TextView
+        android:id="@+id/tv_redeemed_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:paddingStart="12dp"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:textColor="@color/text_primary"
+        android:text="Item Name" />
+
+    <TextView
+        android:id="@+id/tv_redeemed_qty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_streak_chip"
+        android:backgroundTint="@color/teal_primary"
+        android:paddingHorizontal="10dp"
+        android:paddingVertical="4dp"
+        android:text="x1"
+        android:textSize="13sp"
+        android:textStyle="bold"
+        android:textColor="@color/white" />
+
+</LinearLayout>

@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/background_light">
+
+    <!-- Hero banner with category colour -->
+    <FrameLayout
+        android:id="@+id/fl_hero"
+        android:layout_width="match_parent"
+        android:layout_height="200dp">
+
+        <View
+            android:id="@+id/view_hero_bg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <!-- Back button -->
+        <ImageButton
+            android:id="@+id/btn_back"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_margin="8dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:src="@drawable/ic_arrow_back"
+            android:contentDescription="Back" />
+
+        <!-- Large emoji -->
+        <TextView
+            android:id="@+id/tv_hero_emoji"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="🌿"
+            android:textSize="72sp" />
+
+        <!-- Category chip -->
+        <TextView
+            android:id="@+id/tv_detail_category"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|start"
+            android:layout_margin="16dp"
+            android:background="@drawable/bg_chip_category"
+            android:paddingHorizontal="14dp"
+            android:paddingVertical="5dp"
+            android:text="General"
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+        <!-- Like button -->
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab_like"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:layout_margin="16dp"
+            android:src="@drawable/ic_add"
+            app:backgroundTint="@color/white"
+            app:tint="@color/teal_primary"
+            app:fabSize="mini" />
+
+    </FrameLayout>
+
+    <!-- Scrollable content -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <TextView
+                android:id="@+id/tv_detail_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Tip Title"
+                android:textColor="@color/text_primary"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+
+            <!-- Metadata row -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:id="@+id/tv_detail_likes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="♥ 0 likes"
+                    android:textColor="@color/text_secondary"
+                    android:textSize="13sp" />
+
+                <View
+                    android:layout_width="4dp"
+                    android:layout_height="4dp"
+                    android:layout_marginHorizontal="8dp"
+                    android:background="@color/text_hint" />
+
+                <TextView
+                    android:id="@+id/tv_detail_views"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="👁 0 views"
+                    android:textColor="@color/text_secondary"
+                    android:textSize="13sp" />
+
+            </LinearLayout>
+
+            <!-- Divider -->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/text_hint"
+                android:layout_marginVertical="16dp" />
+
+            <!-- Summary -->
+            <TextView
+                android:id="@+id/tv_detail_summary"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Summary"
+                android:textColor="@color/teal_dark"
+                android:textSize="15sp"
+                android:textStyle="italic" />
+
+            <!-- Body -->
+            <TextView
+                android:id="@+id/tv_detail_body"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Body content"
+                android:textColor="@color/text_primary"
+                android:textSize="15sp"
+                android:lineSpacingMultiplier="1.6" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Data extraction rules for EcoLUMS.
+    The app stores its primary data in Firebase Firestore (not locally), so
+    local backup coverage is intentionally minimal.  We exclude caches and
+    any files that could contain stale auth tokens.
+    See https://developer.android.com/about/versions/12/backup-restore#xml-changes
+-->
+<data-extraction-rules>
+    <cloud-backup>
+        <!-- Exclude Firebase/Google auth token caches -->
+        <exclude domain="sharedpref" path="com.google.android.gms.auth.api.signin.StoredCredential"/>
+        <!-- Exclude general app caches -->
+        <exclude domain="cache" path="."/>
+        <exclude domain="external-cache" path="."/>
+    </cloud-backup>
+    <device-transfer>
+        <exclude domain="cache" path="."/>
+        <exclude domain="external-cache" path="."/>
+    </device-transfer>
+</data-extraction-rules>

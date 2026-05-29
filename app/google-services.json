@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "128536715542",
+    "project_id": "ecolums-3caef",
+    "storage_bucket": "ecolums-3caef.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:128536715542:android:d008b28c7211c8fa07b037",
+        "android_client_info": {
+          "package_name": "com.example.ecolums"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "128536715542-0in664iorsul3go8nhtj5a47j10mjakf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCohCAAEgB7LO7SnQ3iHH-JXPp5gLc2htg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "128536715542-0in664iorsul3go8nhtj5a47j10mjakf.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

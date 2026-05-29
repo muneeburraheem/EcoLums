@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/root_login"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/teal_primary">
+
+    <!-- Coloured header — shrinks/grows with keyboard via fillViewport -->
+    <LinearLayout
+        android:id="@+id/fl_auth_header"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:paddingBottom="40dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="🌿"
+            android:textSize="52sp"
+            android:gravity="center" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="EcoLUMS"
+            android:textSize="34sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:letterSpacing="0.05"
+            android:layout_marginTop="8dp" />
+
+        <TextView
+            android:id="@+id/tv_header_subtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Welcome back!"
+            android:textSize="15sp"
+            android:textColor="#CCFFFFFF"
+            android:layout_marginTop="6dp" />
+
+    </LinearLayout>
+
+    <!-- White form card with rounded top -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:background="@drawable/bg_top_rounded"
+        android:fillViewport="true"
+        android:overScrollMode="never">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingHorizontal="28dp"
+            android:paddingTop="28dp"
+            android:paddingBottom="32dp">
+
+            <!-- Tab switcher: Sign In | Sign Up -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:orientation="horizontal"
+                android:background="@drawable/bg_tab_unselected"
+                android:padding="4dp">
+
+                <TextView
+                    android:id="@+id/tab_sign_in"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Sign In"
+                    android:gravity="center"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    android:background="@drawable/bg_tab_selected" />
+
+                <TextView
+                    android:id="@+id/tab_sign_up"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Sign Up"
+                    android:gravity="center"
+                    android:textSize="14sp"
+                    android:textColor="@color/text_secondary"
+                    android:background="@android:color/transparent" />
+
+            </LinearLayout>
+
+            <!-- Mode description -->
+            <TextView
+                android:id="@+id/tv_mode_description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Enter your credentials to continue"
+                android:textSize="13sp"
+                android:textColor="@color/text_secondary"
+                android:gravity="center" />
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="16dp" />
+
+            <!-- Email field -->
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/til_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                app:hintTextColor="@color/teal_primary"
+                app:boxStrokeColor="@color/teal_primary"
+                app:boxBackgroundColor="@color/white">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/et_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Email address"
+                    android:inputType="textEmailAddress"
+                    android:textSize="15sp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="12dp" />
+
+            <!-- Password field -->
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/til_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                app:hintTextColor="@color/teal_primary"
+                app:boxStrokeColor="@color/teal_primary"
+                app:boxBackgroundColor="@color/white"
+                app:passwordToggleEnabled="true">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/et_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Password"
+                    android:inputType="textPassword"
+                    android:textSize="15sp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="24dp" />
+
+            <!-- Action button -->
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_continue"
+                android:layout_width="match_parent"
+                android:layout_height="54dp"
+                android:text="Sign In"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:backgroundTint="@color/teal_primary"
+                app:cornerRadius="12dp" />
+
+            <!-- Progress -->
+            <ProgressBar
+                android:id="@+id/progress_bar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="16dp"
+                android:visibility="gone" />
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="24dp" />
+
+            <!-- Terms -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="By continuing you agree to our Terms of Service and Privacy Policy"
+                android:textColor="@color/text_hint"
+                android:textSize="11sp"
+                android:gravity="center"
+                android:lineSpacingMultiplier="1.4" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

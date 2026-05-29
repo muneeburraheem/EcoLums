@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/nav_logs"
+        android:icon="@drawable/ic_logs"
+        android:title="@string/nav_logs" />
+
+    <item
+        android:id="@+id/nav_challenges"
+        android:icon="@drawable/ic_challenges"
+        android:title="@string/nav_challenges" />
+
+    <item
+        android:id="@+id/nav_home"
+        android:icon="@drawable/ic_home"
+        android:title="@string/nav_home" />
+
+    <item
+        android:id="@+id/nav_clubs"
+        android:icon="@drawable/ic_clubs"
+        android:title="@string/nav_clubs" />
+
+    <item
+        android:id="@+id/nav_impact"
+        android:icon="@drawable/ic_personal_impact"
+        android:title="@string/nav_impact" />
+
+</menu>

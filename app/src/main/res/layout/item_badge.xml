@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card_badge"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="6dp"
+    app:cardCornerRadius="14dp"
+    app:cardElevation="3dp"
+    app:cardBackgroundColor="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:padding="16dp">
+
+        <!-- Badge emoji (large) -->
+        <TextView
+            android:id="@+id/tv_badge_emoji"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="🌿"
+            android:textSize="40sp"
+            android:gravity="center" />
+
+        <!-- Badge name -->
+        <TextView
+            android:id="@+id/tv_badge_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Badge Name"
+            android:textSize="13sp"
+            android:textStyle="bold"
+            android:textColor="#212121"
+            android:gravity="center"
+            android:maxLines="2"
+            android:ellipsize="end" />
+
+        <!-- Tier label -->
+        <TextView
+            android:id="@+id/tv_badge_tier"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="STARTER"
+            android:textSize="10sp"
+            android:textStyle="bold"
+            android:textColor="#757575"
+            android:letterSpacing="0.06"
+            android:visibility="visible" />
+
+        <!-- Date earned or locked status -->
+        <TextView
+            android:id="@+id/tv_badge_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="Not earned yet"
+            android:textSize="11sp"
+            android:textColor="#BDBDBD"
+            android:gravity="center"
+            android:visibility="visible" />
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="6dp"
+    app:cardCornerRadius="14dp"
+    app:cardElevation="3dp"
+    app:cardBackgroundColor="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="14dp">
+
+        <!-- Emoji -->
+        <TextView
+            android:id="@+id/tv_merch_emoji"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="👕"
+            android:textSize="48sp"
+            android:gravity="center"
+            android:layout_marginBottom="8dp" />
+
+        <!-- Name -->
+        <TextView
+            android:id="@+id/tv_merch_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Item Name"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:textColor="#212121"
+            android:gravity="center"
+            android:maxLines="2"
+            android:ellipsize="end" />
+
+        <!-- Description -->
+        <TextView
+            android:id="@+id/tv_merch_desc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="Description"
+            android:textSize="12sp"
+            android:textColor="#757575"
+            android:gravity="center"
+            android:maxLines="2"
+            android:ellipsize="end" />
+
+        <!-- Divider -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginVertical="10dp"
+            android:background="#F0F0F0" />
+
+        <!-- Cost and stock row -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/tv_merch_cost"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="100 pts"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:textColor="@color/teal_primary" />
+
+            <TextView
+                android:id="@+id/tv_merch_stock"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="10 left"
+                android:textSize="11sp"
+                android:textColor="#9E9E9E" />
+
+        </LinearLayout>
+
+        <!-- Redeem button -->
+        <Button
+            android:id="@+id/btn_redeem"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:text="Redeem"
+            android:textSize="13sp"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/teal_primary"
+            android:stateListAnimator="@null" />
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
